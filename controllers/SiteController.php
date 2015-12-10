@@ -12,6 +12,8 @@ use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+	public $defaultAction = 'home';
+
 	public function behaviors()
 	{
 		return [
