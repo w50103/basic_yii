@@ -27,4 +27,21 @@ class HelloController extends Controller
     {
         echo $message . "\n";
     }
+
+    public function actionTest(){
+        while(true){
+            echo date('Y-m-d H:i:s');
+
+            if(time()%2 == 0){
+                echo PHP_EOL;
+            }else{
+                usleep(300);
+            }
+            if(time() %3 == 0){
+                break;
+
+            }
+        }
+    }
+
 }

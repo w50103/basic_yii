@@ -12,6 +12,8 @@ $config = [
 	],
 	//定义启动阶段需要运行的组件
 	'bootstrap' => ['log'],
+
+
 	//注册多个其它地方使用的应用组件
 	'components' => [
 		'request' => [
@@ -45,7 +47,12 @@ $config = [
 				],
 			],
 		],
-		'db' => require(__DIR__ . '/db.php'),
+		'db' => require(__DIR__ . '/local-db.php'),
+		'phoneDB' => require (__DIR__.'/phone-db.php'),
+		'urlManager' => [
+			'enablePrettyUrl' => true,
+			'showScriptName' => false,
+		],
 	],
 	'params' => $params,
 ];
