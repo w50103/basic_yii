@@ -1,0 +1,9 @@
+RewriteEngine On
+
+#RewriteCond %{REQUEST_URI} ^/index\.php/?.*
+#RewriteRule ^index\.php(.*)$ $1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} !^/index\.php/?.*$
+RewriteCond %{REQUEST_URI} !(.*)\.(js|ico|gif|jpg|jpeg|png|swf|css|html|htm|php|rar|xml|ani|cur|mp3|mp4|flv)\??(.*)$
+RewriteRule !^/index\.php(.*)$ index\.php$1 [NC,L]
+#RewriteRule !^/index\.php(.*)$ index\.php$1 [NC,L]
