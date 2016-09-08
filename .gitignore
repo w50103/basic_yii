@@ -1,6 +1,6 @@
 # phpstorm project files
 .idea
-
+config/*
 # netbeans project files
 nbproject
 
@@ -25,7 +25,3 @@ composer.phar
 phpunit.phar
 # local phpunit config
 /phpunit.xml
-
-.bowerrc
-basic_yii.iml
-runtime
