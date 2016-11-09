@@ -38,6 +38,7 @@ class HelloController extends Controller
                 usleep(300);
             }
             if(time() %3 == 0){
+                echo 'die';
                 break;
 
             }
